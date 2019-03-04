@@ -164,7 +164,7 @@ body {
 .about {
   background-color: #510fad;
   padding-top: 100px;
-  padding-bottom: 130px;
+  padding-bottom: 0px;
 }
 
 
@@ -172,13 +172,15 @@ body {
 content: ''; 
 position: absolute; 
 margin: 0 auto; 
-bottom: 32%; 
+bottom: 330px; 
 height: 93px; 
 width: 1024px; 
 background-image: url(../images/top.png); 
 background-repeat: no-repeat; 
 background-size: 100% 100%; 
 } 
+
+
 
 .about_title_container {
   width: 360px;
