@@ -67,8 +67,6 @@
 
 body {
   background-color: #ede9e0;
-
-
 }
 
 .warp {
@@ -81,6 +79,71 @@ body {
   width: 940px;
   margin: 0 auto;
 }
+
+.inner_footer {
+  width: 940px;
+  margin: 0 auto;
+  border-top: 3px solid #d5d1ca;
+}
+
+.sprite {
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.sprite-arrow_next {
+    width: 20px;
+    height: 14px;
+    background-position: -5px -5px;
+    margin-left: 10px;
+}
+
+.sprite-arrow_next_yellow {
+    width: 20px;
+    height: 14px;
+    background-position: -35px -5px;
+    margin-left: 10px;
+}
+
+.sprite-social-icon-facebook {
+    width: 26px;
+    height: 26px;
+    background-position: -65px -5px;
+}
+
+.sprite-social-icon-facebook_violet {
+    width: 26px;
+    height: 26px;
+    background-position: -5px -41px;
+}
+
+.sprite-social-icon-instagram {
+    width: 26px;
+    height: 26px;
+    background-position: -41px -41px;
+}
+
+.sprite-social-icon-instagram_violet {
+    width: 26px;
+    height: 26px;
+    background-position: -101px -5px;
+}
+
+.sprite-social-icon-vk {
+    width: 26px;
+    height: 26px;
+    background-position: -77px -41px;
+}
+
+.sprite-social-icon-vk_violet {
+    width: 26px;
+    height: 26px;
+    background-position: -5px -77px;
+}
+
+
+
 .header {
 
 }
@@ -102,8 +165,8 @@ body {
 
 .header_menu {
   display: inline-block;
-  
 }
+
 .header_menu_nav {
   list-style: none;
 }
@@ -129,20 +192,16 @@ body {
   color: #510fad
 }
 
-
 .promo {
   padding-bottom: 200px;
   padding-top: 150px;
-  
-
 }
 
 .promo_content {
   width: 550px;
   margin-left: 320px;
-  
-
 }
+
 .promo_title {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 500;
@@ -165,19 +224,31 @@ body {
   background-color: #510fad;
   padding-top: 100px;
   padding-bottom: 130px;
+  position: relative;
 }
 
+.about:before { 
+content: ''; 
+position: absolute; 
+left: 0; 
+bottom: 100%; 
+height: 90px; 
+width: 100%; 
+background-image: url(../images/top.png); 
+background-repeat: no-repeat; 
+background-size: 100% 100%; 
+}
 
-.about:before {
-    content: '';
-    position: absolute;
-    margin: 0 auto;
-    margin-top: -188px;
-    height: 93px;
-    width: 1024px;
-    background-image: url(../images/top.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.about:after { 
+content: ''; 
+position: absolute; 
+left: 0; 
+top: 100%; 
+height: 90px; 
+width: 100%; 
+background-image: url(../images/bottom.png); 
+background-repeat: no-repeat; 
+background-size: 100% 100%; 
 }
 
 .about_title_container {
@@ -252,7 +323,6 @@ body {
 .breeds_list {
   margin: 0 auto;
   font-size: 0;
-
 }
 
 .breed {
@@ -264,7 +334,6 @@ body {
   font-weight: 500;
   font-size: 36px;
   text-align: center;
-
 }
 
 .breed_title {
@@ -280,6 +349,7 @@ body {
 
 .breed_img {
   display: inline-block;
+  border-radius: 70px;
 
 }
 
@@ -293,7 +363,6 @@ body {
   vertical-align: top;
   margin-top: -16px;
   margin-left: 22px;
-
 }
 
 .breed_bulldog_container {
@@ -342,15 +411,30 @@ body {
 }
 
 .reviews_container {
+  position: relative;
   display: inline-block;
+  margin-top: 30px;
   width: 50%;
   vertical-align: top;
+}
+
+.reviews_container:before {
+  content: '';
+  position: absolute;
+  width: 81px;
+  height: 66px;
+  top: -80px;
+  background-image: url(../images/apostrophe.png); 
+  background-repeat: no-repeat; 
+  background-size: 100% 100%; 
+
 }
 
 .feedback_post {
   margin-left: 0px;
   margin-right: 0px;
 }
+
 
 .apostrophe {
   margin-top: -50px;
@@ -383,7 +467,6 @@ body {
 .review__img {
   display: inline-block;
   width: 50%;
-
 }
 
 .feedback_image {
@@ -409,6 +492,7 @@ body {
 .about_pets {
   font-size: 0;
   background-color: #510fad;
+  background-image: url(../images/backgroun_pattern.png);
   padding-top: 110px;
   padding-bottom: 100px;
 }
@@ -450,13 +534,15 @@ body {
 .about_pets__item_1 {
   display: inline-block;
   width: 220px;
-  padding-left: 10px;
+  margin-left: 10px;
+  box-shadow: 0 0 50px 0px rgba(0,0,0,0.4);
 }
 
 .about_pets__item_2 {
   display: inline-block;
   width: 220px;
-  padding-left: 20px;
+  margin-left: 20px;
+  box-shadow: 0 0 50px 0px rgba(0,0,0,0.4);
 }
 
 .about_pets__item_img_container {
@@ -524,6 +610,7 @@ body {
 
 .contacts {
   padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 .contacts_title {
@@ -545,7 +632,7 @@ body {
 }
 
 .contacts_mode {
-    display: inline-block;
+  display: inline-block;
   width: 50%;
 }
 
@@ -555,7 +642,7 @@ body {
 }
 
 .contacts_phone {
-    display: inline-block;
+  display: inline-block;
   width: 50%;
 }
 
@@ -577,10 +664,32 @@ body {
   display: block;
 }
 
+.footer_menu {
+  display: inline-block;
+  margin-bottom: 50px;
+}
 
+.footer_menu__nav {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
 
+.footer_menu_item {
+  display: inline-block;
+  margin-right: 25px;
+}
 
-
+.footer_social_links {
+  display: inline-block;
+}
+.footer_menu_link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #656565;
+  text-decoration: none;
+}
 
 
 
