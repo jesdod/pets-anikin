@@ -641,9 +641,7 @@ background-size: 100% 100%;
   width: 50%;
 }
 
-.contacts_phone {
-  display: inline-block;
-  width: 50%;
+.phone {
 }
 
 .contacts_headline {
@@ -682,6 +680,7 @@ background-size: 100% 100%;
 
 .footer_social_links {
   display: inline-block;
+  margin-left: 36.5%;
 }
 .footer_menu_link {
   font-family: 'Roboto', sans-serif;
@@ -690,7 +689,6 @@ background-size: 100% 100%;
   color: #656565;
   text-decoration: none;
 }
-
 
 
 
