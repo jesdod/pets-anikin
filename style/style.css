@@ -85,7 +85,6 @@ body {
   margin: 0 auto;
   border-top: 3px solid #d5d1ca;
 }
-
 .sprite {
     background-image: url(../images/spritesheet.png);
     background-repeat: no-repeat;
@@ -99,44 +98,35 @@ body {
     margin-left: 10px;
 }
 
-.sprite-arrow_next_yellow {
+
+
+.sprite-arrow_video {
     width: 20px;
     height: 14px;
-    background-position: -35px -5px;
+    background-position: -65px -5px;
     margin-left: 10px;
 }
 
-.sprite-social-icon-facebook {
+
+.sprite-vk-social-logotype {
     width: 26px;
     height: 26px;
-    background-position: -65px -5px;
+    background-position: -35px -29px;
 }
 
-.sprite-social-icon-facebook_violet {
+.sprite-vk-social-logotype-copy {
     width: 26px;
     height: 26px;
-    background-position: -5px -41px;
+    background-position: -95px -5px;
 }
 
-.sprite-social-icon-instagram {
+.sprite-vk-social-logotype-copy-2 {
     width: 26px;
     height: 26px;
-    background-position: -41px -41px;
+    background-position: -71px -41px;
 }
 
-.sprite-social-icon-instagram_violet {
-    width: 26px;
-    height: 26px;
-    background-position: -101px -5px;
-}
-
-.sprite-social-icon-vk {
-    width: 26px;
-    height: 26px;
-    background-position: -77px -41px;
-}
-
-.sprite-social-icon-vk_violet {
+.sprite-vk-social-logotype1 {
     width: 26px;
     height: 26px;
     background-position: -5px -77px;
@@ -184,6 +174,10 @@ body {
   text-decoration: none;
 }
 
+.menu_link:hover {
+  color: #510fad;
+}
+
 .header_phonenumber {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -228,27 +222,27 @@ body {
 }
 
 .about:before { 
-content: ''; 
-position: absolute; 
-left: 0; 
-bottom: 100%; 
-height: 90px; 
-width: 100%; 
-background-image: url(../images/top.png); 
-background-repeat: no-repeat; 
-background-size: 100% 100%; 
+  content: ''; 
+  position: absolute; 
+  left: 0; 
+  bottom: 100%; 
+  height: 90px; 
+  width: 100%; 
+  background-image: url(../images/top.png); 
+  background-repeat: no-repeat; 
+  background-size: 100% 100%; 
 }
 
 .about:after { 
-content: ''; 
-position: absolute; 
-left: 0; 
-top: 100%; 
-height: 90px; 
-width: 100%; 
-background-image: url(../images/bottom.png); 
-background-repeat: no-repeat; 
-background-size: 100% 100%; 
+  content: ''; 
+  position: absolute; 
+  left: 0; 
+  top: 100%; 
+  height: 90px; 
+  width: 100%; 
+  background-image: url(../images/bottom.png); 
+  background-repeat: no-repeat; 
+  background-size: 100% 100%; 
 }
 
 .about_title_container {
@@ -313,6 +307,18 @@ background-size: 100% 100%;
   margin-left: 3px;
   color: #ffec00;
 }
+
+.about_link:hover {
+  color: #b8adc8;
+}
+
+.about_link:hover .sprite-arrow_video {
+  width: 20px;
+  height: 14px;
+  background-position: -5px -29px;
+  margin-left: 10px;
+}
+
 
 .breeds {
   margin: 0 auto;
@@ -394,6 +400,17 @@ background-size: 100% 100%;
   color: #510fad;
   text-decoration: none;
   padding-left: 2px;
+}
+
+.breed__link:hover {
+  color: #737274;
+}
+
+.breed__link:hover .sprite-arrow_next {
+    width: 20px;
+    height: 14px;
+    background-position: -35px -5px;
+    margin-left: 10px;
 }
 
 .reviews {
@@ -489,6 +506,10 @@ background-size: 100% 100%;
   color: #510fad;
 }
 
+.feedback__link:hover {
+  color: #737274;
+}
+
 .about_pets {
   font-size: 0;
   background-color: #510fad;
@@ -524,7 +545,20 @@ background-size: 100% 100%;
 
 }
 
+.about_pets_vk_img:hover {
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+}
 
+.about_pets_fb_img:hover {
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+}
+
+.about_pets_ins_img:hover {
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+}
 
 .about_pets_item_container {
   display: inline-block;
@@ -538,11 +572,19 @@ background-size: 100% 100%;
   box-shadow: 0 0 50px 0px rgba(0,0,0,0.4);
 }
 
+.about_pets__item_1:hover {
+  box-shadow: 0 0 50px 0px rgba(0,0,0,0.8);
+}
+
 .about_pets__item_2 {
   display: inline-block;
   width: 220px;
   margin-left: 20px;
   box-shadow: 0 0 50px 0px rgba(0,0,0,0.4);
+}
+
+.about_pets__item_2:hover {
+  box-shadow: 0 0 50px 0px rgba(0,0,0,0.8);
 }
 
 .about_pets__item_img_container {
@@ -629,6 +671,7 @@ background-size: 100% 100%;
   display: inline-block;
   width: 50%;
   padding-bottom: 30px;
+  vertical-align: top;
 }
 
 .contacts_mode {
@@ -682,6 +725,7 @@ background-size: 100% 100%;
   display: inline-block;
   margin-left: 36.5%;
 }
+
 .footer_menu_link {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -690,6 +734,13 @@ background-size: 100% 100%;
   text-decoration: none;
 }
 
+.footer_menu_link:hover {
+  color: #510fad;
+}
+
+.about_pets_vk_img:hover {
+
+}
 
 
 
