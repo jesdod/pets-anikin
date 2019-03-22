@@ -565,8 +565,9 @@ body {
 .about_pets__item_description {
   display: inline-block;
   background-color: #fff;
-  height: 130px;
+  padding-bottom: 20px;
   border-radius: 0 0 10px 10px;
+
 }
 
 .about_pets__item_description_txt {
